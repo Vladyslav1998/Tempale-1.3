@@ -1,3 +1,25 @@
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #fff;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 108px 0 108px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
