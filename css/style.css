@@ -1,3 +1,4 @@
+/* Variables */
 /* Global */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -10,6 +11,7 @@ body {
   color: #3d3d3d;
   font-size: 16px;
   line-height: 1.7;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .container {
@@ -22,4 +24,132 @@ section {
   padding: 108px 0 108px 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+.section-title {
+  position: relative;
+  font-size: 36px;
+  margin: 0 0 60px 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: 50%;
+  width: 50px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: #E94218;
+  border-radius: 50px;
+}
+
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(transparent, #242424), url("https://images.pexels.com/photos/4050320/pexels-photo-4050320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash i {
+  font-size: 30px;
+  color: #FEFEFE;
+  background-color: #E94218;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+}
+
+.splash-inner {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  color: #FEFEFE;
+  font-size: 60px;
+  margin: 48px 0 0 0;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+.page-title::after {
+  position: absolute;
+  content: "";
+  bottom: -24px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: #E94218;
+  border-radius: 50px;
+}
+
+.page-subtitle {
+  color: #FEFEFE;
+  font-size: 18px;
+  margin: 48px 0 0 0;
+}
+
+/* Intro */
+.intro p {
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 48px 0;
+  border-top: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+}
+
+/* About */
+.about {
+  background-color: #F1F1F1;
+}
+
+/* Skills */
+[class^=skill-] {
+  position: relative;
+}
+
+.skill-image {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.skill-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 1.5s;
+}
+
+.skill-right .skill-image {
+  right: 0;
+}
+
+.skill-right .skill-description {
+  padding: 36px 55% 36px 0;
+  text-align: right;
+}
+
+.skill-left .skill-description {
+  padding: 36px 0 36px 55%;
+  text-align: left;
+}
+
+.skill-image img:hover {
+  transform: scale(1.15);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBVUEsV0FBQTtBQUNBO0VBQ0csc0JBQUE7QUNSSDs7QURXQTtFQUNHLFNBQUE7RUFDQSxrQkFBQTtFQUNBLHNCQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLHVDQXBCUztBQ1laOztBRFdBO0VBQ0csaUJBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtBQ1JIOztBRFdBO0VBQ0csd0JBQUE7QUNSSDs7QURXQTtFQUNHLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0Esb0NBcENXO0FDNEJkOztBRFdBO0VBQ0csa0JBQUE7RUFDQSxXQUFBO0VBQ0EsYUFBQTtFQUNBLFNBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLDJCQUFBO0VBQ0EsbUJBN0NTO0VBOENULG1CQUFBO0FDUkg7O0FEV0EsV0FBQTtBQUVBO0VBQ0csYUFBQTtFQUNBLGtCQUFBO0VBQ0EsK0tBQUE7RUFDQSw0QkFBQTtFQUNBLGtDQUFBO0VBQ0Esc0JBQUE7RUFDQSw0QkFBQTtBQ1RIOztBRFlBO0VBQ0csZUFBQTtFQUNBLGNBOURXO0VBK0RYLHlCQWhFUztFQWlFVCxZQUFBO0VBQ0EsV0FBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7QUNUSDs7QURZQTtFQUNHLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLFFBQUE7RUFDQSxTQUFBO0VBQ0EsZ0NBQUE7QUNUSDs7QURZQTtFQUNHLGNBL0VXO0VBZ0ZYLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0Esb0NBdEZXO0FDNkVkOztBRFlBO0VBQ0csa0JBQUE7RUFDQSxXQUFBO0VBQ0EsYUFBQTtFQUNBLFNBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLDJCQUFBO0VBQ0EsbUJBL0ZTO0VBZ0dULG1CQUFBO0FDVEg7O0FEWUE7RUFDRyxjQW5HVztFQW9HWCxlQUFBO0VBQ0Esa0JBQUE7QUNUSDs7QURZQSxVQUFBO0FBQ0E7RUFDRyxlQUFBO0VBQ0EsVUFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0VBQ0EsNkJBQUE7RUFDQSxnQ0FBQTtBQ1RIOztBRFlBLFVBQUE7QUFDQTtFQUNHLHlCQW5IZ0I7QUMwR25COztBRFlBLFdBQUE7QUFDQTtFQUNHLGtCQUFBO0FDVEg7O0FEWUE7RUFDRyxrQkFBQTtFQUNBLFVBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUE7RUFDQSxVQUFBO0FDVEg7O0FEWUE7RUFDRyxXQUFBO0VBQ0EsWUFBQTtFQUNBLG9CQUFBO0tBQUEsaUJBQUE7RUFDQSxvQkFBQTtBQ1RIOztBRFlBO0VBQ0csUUFBQTtBQ1RIOztBRFlBO0VBQ0csd0JBQUE7RUFDQSxpQkFBQTtBQ1RIOztBRGFBO0VBQ0csd0JBQUE7RUFDQSxnQkFBQTtBQ1ZIOztBRGFBO0VBQ0csc0JBQUE7QUNWSCIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
